@@ -4,9 +4,9 @@
       Andrawan's Badminton Counter</div>
     <b-container style="padding-top:25px;">
       <b-row style="background-color: rgb(8, 52, 8);">
-        <b-col class="main-counter" :class="(counterA > 19 ? 'font-smaller' : '')" @click="increase('A')">{{ counterA
+        <b-col class="main-counter" :class="(counterA > 9 ? 'font-smaller' : '')" @click="increase('A')">{{ counterA
         }}</b-col>
-        <b-col class="main-counter" :class="(counterB > 19 ? 'font-smaller' : '')" @click="increase('B')"> {{ counterB
+        <b-col class="main-counter" :class="(counterB > 9 ? 'font-smaller' : '')" @click="increase('B')"> {{ counterB
         }}
         </b-col>
       </b-row>
@@ -127,12 +127,12 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
 .main-counter,
 .reducer,
 .serve-counter {
-  font-family: 'Wallpoet', cursive;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .container {
